@@ -8,9 +8,6 @@ import React, { FC, useState } from "react";
 import { NavbarSidebar } from "./navbar-sidebar";
 import { MenuIcon } from "lucide-react";
 
-interface NavbarProps {
-  // Your prop types here
-}
 interface NavbarItemProps {
   href: string;
   children: React.ReactNode;
@@ -44,9 +41,9 @@ const navbarItems: NavbarItemProps[] = [
   { href: "/contact", children: "Contact" },
 ];
 
-export const Navbar: FC<NavbarProps> = (props) => {
+export const Navbar: FC<NavbarProps> = () => {
   const pathname = usePathname();
-  const [sidebarOpen, setSidebarOpen] = useState(!false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div className="h-20 flex border-b justify-between font-medium bg-white">
       <NavbarSidebar
