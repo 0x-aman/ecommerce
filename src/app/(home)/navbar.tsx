@@ -41,7 +41,7 @@ const navbarItems: NavbarItemProps[] = [
   { href: "/contact", children: "Contact" },
 ];
 
-export const Navbar: FC<NavbarProps> = () => {
+export const Navbar: FC = () => {
   const pathname = usePathname();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
