@@ -3,7 +3,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { Textarea } from "@/components/ui/textarea";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
       </div>
       <div>
         <Input placeholder="yo this is a input" />
-      </div>
+      </div> 
       <div>
         <Textarea placeholder="yo this is a textarea" />
       </div>
