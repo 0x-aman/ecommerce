@@ -63,11 +63,7 @@ const Categories: FC<CategoriesProps> = ({ data }) => {
   return (
     <div className="relative w-full">
       {/* categories sidebar  */}
-      <CategoriesSidebar
-        open={isSidebarOpen}
-        onOpenChange={setIsSidebarOpen}
-        data={data}
-      />
+      <CategoriesSidebar open={isSidebarOpen} onOpenChange={setIsSidebarOpen} />
 
       {/* // hidden div to measure all items  */}
       <div
